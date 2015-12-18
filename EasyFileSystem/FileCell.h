@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FileCell.h
 //  EasyFileSystem
 //
 //  Created by huangqiang on 12/18/15.
@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "File.h"
 
-@interface ViewController : UIViewController
+@interface FileCell : UITableViewCell
 
-@property (nonatomic, strong) File  *root;
+@property (nonatomic, weak) id                data;
+
+- (void)loadContent;
 
 @end
-
